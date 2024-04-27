@@ -1,0 +1,60 @@
+body, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  display: block;
+  text-align: center;
+  position: relative;
+  margin: 150px auto;
+  color: #fff;
+  font-weight: 400;
+  background-color: #dc3545;
+  border-color: #dc3545;
+  padding: .5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: .3rem;
+  border: 1px solid #ced4da;
+}
+.btn:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+}
+
+.btn:focus {
+  box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, .5);
+}
+
+.popover{
+  position: absolute;
+  max-width: 276px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  text-align: start;
+  font-size: .875rem;
+}
+
+.popover-header {
+  padding: .5rem .75rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ebebeb;
+  border-top-left-radius: calc(.3rem - 1px);
+  border-top-right-radius: calc(.3rem - 1px);
+}
+
+.popover-body {
+  padding: .4rem .75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: .875rem;
+}
