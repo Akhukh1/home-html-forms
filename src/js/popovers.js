@@ -1,5 +1,5 @@
 export default class Popovers {
-  showPopover(btn) {
+  static showPopover(btn) {
     const popover = document.createElement('div');
     const popoverContainer = document.body.appendChild(popover);
     popoverContainer.classList.add('popover');
@@ -18,7 +18,7 @@ export default class Popovers {
     popover.style.top = `${top - popover.offsetHeight - 7}px`;
   }
 
-  removePopover() {
+  static removePopover() {
     const popover = document.querySelector('.popover');
     popover.remove();
   }

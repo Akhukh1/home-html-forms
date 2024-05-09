@@ -7,16 +7,14 @@ import Popovers from '../js/popovers';
 test('Click button', () => {
   document.body.innerHTML = '<button class = "btn" type="button">Click to toggle popover</button>';
 
-  const popup = new Popovers();
-
   const btn = document.querySelector('.btn');
 
   btn.addEventListener('click', () => {
     if (document.querySelector('popover')) {
-      popup.removePopover();
+      Popovers.removePopover();
       btn.blur();
     } else {
-      popup.showPopover(btn);
+      Popovers.showPopover(btn);
     }
   });
   btn.click();
